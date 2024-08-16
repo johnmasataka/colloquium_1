@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">  
+  <meta name="description" content="Student work by John Masataka Xianfeng Jiang from Colloquium 1 of the Columbia GSAPP CDP Program in 2024." />
+  
+  <link rel="icon" href="https://gsapp-cdp.github.io/colloquium-1-2024/favicon.ico" sizes="any">
+  <link rel="icon" href="https://gsapp-cdp.github.io/colloquium-1-2024/favicon.svg" type="image/svg+xml">
+  <link href="https://gsapp-cdp.github.io/colloquium-1-2024/normalize.css" rel="stylesheet" />
+  <link href="https://gsapp-cdp.github.io/colloquium-1-2024/main.css" rel="stylesheet" />
+  
+  <link href="style.css" rel="stylesheet" />
+
+  <title>John Masataka Xianfeng Jiang</title>
+</head>
+
+<body>
+  
+    <div class="video-container" id="page0">
+      <img src="./0_main/Main-Page.gif" alt="Color" style="height: 120%;">
+      <p id="typing-text"></p><span id="cursor">|</span>
+    </div>
+
+
+<!-- Corner Bar -->
+    <div class="corner-bar">
+      <nav class="navbar">
+        <a href="#about">John Masataka Xianfeng Jiang</a>
+      </nav>
+    </div>
+
+<!-- Sidebar -->
+<div id="sidebar" class="sidebar">
+  <ul>
+    <li><a href="#page0">Welcome</a></li>
+    <li><a href="#page1">Survey Sites</a></li>
+    <li><a href="#page2" onclick="loadRoute()">Survey Routes</a></li>
+    <li><a href="#page3">1. Colors</a>
+      <ul class="nested horizontal">
+        <li><a href="#page4" class="small-item">1.1</a></li>
+        <li><a href="#page5" class="small-item">1.2</a></li>
+      </ul>
+    </li>
+    <li><a href="#page6">2. Textures</a>
+      <ul class="nested horizontal">
+        <li><a href="#page7" class="small-item">2.1</a></li>
+        <li><a href="#page8" class="small-item">2.2</a></li>
+      </ul>
+    </li>
+    <li><a href="#page9">3. Sounds</a>
+      <ul class="nested horizontal">
+        <li><a href="#page10" class="small-item">3.1</a></li>
+        <li><a href="#page11" class="small-item">3.2</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+
+<!-- Sidebar_2 -->
+<!-- <div id="sidebar2" class="sidebar2">
+  <div id="pageContent"> -->
+    <!-- Content will be updated via JavaScript -->
+  <!-- </div>
+</div> -->
+
+
+<!-- Communities -->
+    <div class="page-container" id="page1">
+      <p id="typing-text-page1" class="hidden"></p><span id="cursor">|</span>
+      <div class="image-grid">
+        <div class="image-wrapper">
+          <img src="./0_main/harlem.jpg" alt="Color">
+          <div class="overlay">
+            <div class="description">Harlem</div>
+          </div>
+        </div>
+        <div class="image-wrapper">
+          <img src="./0_main/Midtown.jpg" alt="Color">
+          <div class="overlay">
+            <div class="description">Midtown</div>
+          </div>
+        </div>
+        <div class="image-wrapper">
+          <img src="./0_main/eastvillage.jpg" alt="Color">
+          <div class="overlay">
+            <div class="description">East Village</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- survey -->
+    <div class="page-container" id="page2">
+      <p id="typing-text-page2" class="hidden"></p><span id="cursor">|</span>
+      <div class="image-wrapper">
+        <iframe src="./survey/route_harlem.html" class="map-frame" style="height: 100vh"></iframe>
+      </div>
+      <div class="image-wrapper">
+        <iframe src="./survey/route_midtown.html" class="map-frame" style="height: 100vh"></iframe>
+      </div>
+      <div class="image-wrapper">
+        <iframe src="./survey/route_eastvillage.html" class="map-frame" style="height: 100vh"></iframe>
+      </div>
+    </div>
+
+
+<!-- colors -->
+    <!-- colors 1: Street Views + hover-->
+    <div class="page-container" id="page3">
+      <p id="typing-text-page3" class="hidden"></p><span id="cursor">|</span>
+      <div class="image-wrapper">
+        <img src="./colors/20240810_Combined_Harlem.jpg" alt="Street View">
+        <div class="overlay">
+          <div class="description">Harlem</div>
+        </div>
+      </div>
+      <div class="image-wrapper">
+        <img src="./colors/20240810_Combined_Midtown.jpg" alt="Street View">
+        <div class="overlay">
+          <div class="description">Midtown</div>
+        </div>
+      </div>
+      <div class="image-wrapper">
+        <img src="./colors/20240810_Combined_East Village.jpg" alt="Street View">
+        <div class="overlay">
+          <div class="description">East Village</div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- colors 2: long image -->
+    <div class="page-container" id="page4">
+      <p id="typing-text-page4" class="hidden"></p><span id="cursor">|</span>
+      <div class="image-wrapper">
+        <img src="./colors/Community_Harlem.webp" alt="City Walk">
+        <div class="overlay">
+          <div class="description_2">Harlem</div>
+        </div>
+        <div>
+          <img src="./colors/color_long_Harlem.png" alt="Image" class="image-above" style="width: 75px; height: 100%;">
+        </div>
+      </div>
+      <div class="image-wrapper">
+        <img src="./colors/Community_Midtown.webp" alt="City Walk">
+        <div class="overlay">
+          <div class="description_2">Midtown</div>
+        </div>
+        <div>
+          <img src="./colors/color_long_Midtown.png" alt="Image" class="image-above" style="width: 75px; height: 100%;">
+        </div>
+      </div>
+      <div class="image-wrapper">
+        <img src="./colors/Community_East Village.webp" alt="City Walk">
+        <div class="overlay">
+          <div class="description_2">East Village</div>
+        </div>
+        <div>
+          <img src="./colors/color_long_East Village.png" alt="Image" class="image-above" style="width: 75px; height: 100%;">
+        </div>
+      </div>
+    </div>
+
+    <!-- colors 3: Blended Long Images -->
+    <div class="page-container" id="page5">
+      <p id="typing-text-page5" class="hidden"></p><span id="cursor">|</span>
+      <div class="image-wrapper">
+        <img src="./colors/Community_Harlem.webp" alt="City Walk">
+        <div class="overlay">
+          <div class="description_2">Harlem</div>
+        </div>
+        <div>
+          <img src="./colors/color_gradient_Harlem.png" alt="Image" class="image-above" style="width: 75px; height: 100%;">
+        </div>
+      </div>
+      <div class="image-wrapper">
+        <img src="./colors/Community_Midtown.webp" alt="City Walk">
+        <div class="overlay">
+          <div class="description_2">Midtown</div>
+        </div>
+        <div>
+          <img src="./colors/color_gradient_Midtown.png" alt="Image" class="image-above" style="width: 75px; height: 100%;">
+        </div>
+      </div>
+      <div class="image-wrapper">
+        <img src="./colors/Community_East Village.webp" alt="City Walk">
+        <div class="overlay">
+          <div class="description_2">East Village</div>
+        </div>
+        <div>
+          <img src="./colors/color_gradient_East Village.png" alt="Image" class="image-above" style="width: 75px; height: 100%;">
+        </div>
+      </div>
+    </div>
+
+
+<!-- Textures -->
+    <!-- Textures 1: Street Views -->
+    <div class="page-container" id="page6">
+      <p id="typing-text-page6" class="hidden"></p><span id="cursor">|</span>
+      <div class="image-grid">
+        <div class="image-wrapper">
+          <img src="./textures/Textures_Harlem.gif" alt="Color">
+          <div class="overlay">
+            <div class="description">Harlem</div>
+          </div>
+        </div>
+        <div class="image-wrapper">
+          <img src="./textures/Textures_Midtown.gif" alt="Color">
+          <div class="overlay">
+            <div class="description">Midtown</div>
+          </div>
+        </div>
+        <div class="image-wrapper">
+          <img src="./textures/Textures_East Village.gif.gif" alt="Color">
+          <div class="overlay">
+            <div class="description">East Village</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Textures 2: Blur Texture -->
+    <div class="page-container" id="page7" style="background-color: black">
+      <p id="typing-text-page7" class="hidden"></p><span id="cursor">|</span>
+      <div class="image-wrapper">
+        <image src="./textures/Backgroud_Color.webp" style="width: 100%; height: 100%;">
+        <div class="overlay">
+          <div class="description_2">Harlem</div>
+        </div>
+        <div>
+          <img src="./textures/Change_Harlem.gif" alt="Color" class="image-above" style="height: 55%; object-fit: contain;">
+        </div>
+      </div>
+      <div class="image-wrapper">
+        <image src="./textures/Backgroud_Color.webp" style="width: 100%; height: 100%;">
+        <div class="overlay">
+          <div class="description_2">Midtown</div>
+        </div>
+        <div>
+          <img src="./textures/Change_Midtown.gif" alt="Color" class="image-above" style="height: 55%; object-fit: contain;">
+        </div>
+      </div>
+      <div class="image-wrapper">
+        <image src="./textures/Backgroud_Color.webp" style="width: 100%; height: 100%;">
+        <div class="overlay">
+          <div class="description_2">East Village</div>
+        </div>
+        <div>
+          <img src="./textures/Change_East Village.gif" alt="Color" class="image-above" style="height: 55%; object-fit: contain;">
+        </div>
+      </div>
+    </div>
+
+    <!-- Textures 3: Line Texture -->
+    <div class="page-container" id="page8" style="background-color: black">
+      <p id="typing-text-page8" class="hidden"></p><span id="cursor">|</span>
+      <div class="image-wrapper">
+        <image src="./textures/Backgroud_Color.webp" style="width: 100%; height: 100%;">
+        <div class="overlay">
+          <div class="description_2">Harlem</div>
+        </div>
+        <div>
+          <img src="./textures/Change_Harlem_Flow.gif" alt="Color" class="image-above" style="height: 55%; object-fit: contain;">
+        </div>
+      </div>
+      <div class="image-wrapper">
+        <image src="./textures/Backgroud_Color.webp" style="width: 100%; height: 100%;">
+        <div class="overlay">
+          <div class="description_2">Midtown</div>
+        </div>
+        <div>
+          <img src="./textures/Change_Midtown_Flow.gif" alt="Color" class="image-above" style="height: 55%; object-fit: contain;">
+        </div>
+      </div>
+      <div class="image-wrapper">
+        <image src="./textures/Backgroud_Color.webp" style="width: 100%; height: 100%;">
+        <div class="overlay">
+          <div class="description_2">East Village</div>
+        </div>
+        <div>
+          <img src="./textures/Change_East Village_Flow.gif" alt="Color" class="image-above" style="height: 55%; object-fit: contain;">
+        </div>
+      </div>
+    </div>
+
+
+<!-- sounds -->
+    <!-- sounds 1: Videos -->
+    <div class="page-container" id="page9">
+      <p id="typing-text-page9" class="hidden"></p><span id="cursor">|</span>
+      <div class="image-grid">
+        <div class="image-wrapper">
+          <img src="./sounds/Sounds_Harlem.gif" alt="Color">
+          <div class="overlay">
+            <div class="description">Harlem</div>
+          </div>
+        </div>
+        <div class="image-wrapper">
+          <img src="./sounds/Sounds_Midtown.gif" alt="Color">
+          <div class="overlay">
+            <div class="description">Midtown</div>
+          </div>
+        </div>
+        <div class="image-wrapper">
+          <img src="./sounds/Sounds_East-Village.gif" alt="Color">
+          <div class="overlay">
+            <div class="description">East Village</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sounds 2: Visualized Sounds -->
+    <div class="page-container" id="page10">
+      <p id="typing-text-page10" class="hidden"></p><span id="cursor">|</span>
+      <img src="./sounds/legend.png" alt="City Walk" style="bottom: 1%; right: 20px; height: 5%; z-index: 200; position: absolute;">
+      <div class="image-wrapper">
+        <img src="./sounds/Sounds Results_Harlem.gif" alt="City Walk">
+        <div class="overlay">
+          <div class="description">Harlem</div>
+        </div>
+      </div>
+      <div class="image-wrapper">
+        <img src="./sounds/Sounds Results_Midtown.gif" alt="City Walk">
+        <div class="overlay">
+          <div class="description">Midtown</div>
+        </div>
+      </div>
+      <div class="image-wrapper">
+        <img src="./sounds/Sounds Results_East Village.gif" alt="City Walk">
+        <div class="overlay">
+          <div class="description">East Village</div>
+        </div>
+      </div>
+    </div>
+
+   <!-- Sounds 3: Long -->
+    <div class="page-container" id="page11">
+      <p id="typing-text-page11" class="hidden"></p><span id="cursor">|</span>
+      <div class="image-wrapper">
+        <img src="./colors/Community_Harlem.webp" alt="City Walk">
+        <div class="overlay">
+          <div class="description_2">Harlem</div>
+        </div>
+        <div style="width: 100%; overflow-x: auto;">
+          <iframe src="./sounds/piano/piano_harlem.html" class="piano-above" style="height: 300%; width:300%"></iframe>
+        </div>
+      </div>
+      <div class="image-wrapper">
+        <img src="./colors/Community_Midtown.webp" alt="City Walk">
+        <div class="overlay">
+          <div class="description_2">Midtown</div>
+        </div>
+        <div style="width: 100%; overflow-x: auto;">
+          <iframe src="./sounds/piano/piano_midtown.html" class="piano-above" style="height: 300%; width:300%"></iframe>
+        </div>
+      </div>
+      <div class="image-wrapper">
+        <img src="./colors/Community_East Village.webp" alt="City Walk">
+        <div class="overlay">
+          <div class="description_2">East Village</div>
+        </div>
+        <div style="width: 100%; overflow-x: auto;">
+          <iframe src="./sounds/piano/piano_eastvillage.html" class="piano-above" style="height: 300%; width:300%"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <section id="about">
+      <div class="about-container">
+          <img src="./about/20240731_Photo_John.webp" alt="John Masataka Xianfeng Jiang">
+          <div class="about-text">
+              <h1>John Masataka Xianfeng Jiang</h1>
+              <p>John Masataka Xianfeng Jiang is a Tokyo/New York-based architect and project manager with over seven years of professional experience at Kengo Kuma & Associates, where he has led teams on a wide range of projects, including luxury towers, resorts, private residences, and high-end furniture. He has been responsible for global architectural projects, bridging the confluence of technology, design, and management. Notable completed work includes <em>Endo at the Rotunda</em> (London), <em>Aman Miami Beach</em> (Florida), <em>LA Brooktree House</em> (California), and <em>Alberni Tower</em> (Vancouver). John also serves as an assistant researcher at the Center for Spatial Research in New York. He received his master's degree in architecture from Hokkaido University in Japan and master's degree in computation from Columbia University in the United States.</p>
+          </div>
+      </div>
+  </section>
+
+  
+  <footer></footer>
+  
+      <!-- Include the JavaScript file here -->
+      <script src="script.js"></script>
+    <script>
+          // Array of route HTML file names
+    var routes = ['route_harlem.html', 'route_midtown.html', 'route_eastvillage.html'];
+    var currentRouteIndex = 0;
+    var iframe = document.getElementById('routeFrame');
+
+    // Function to load the current route
+    function loadRoute() {
+        iframe.src = routes[currentRouteIndex];
+    }
+
+    // Listen for the custom event from the iframe
+    window.addEventListener('message', function(event) {
+        if (event.data === 'animationEnded') {
+            // Move to the next route
+            currentRouteIndex = (currentRouteIndex + 1) % routes.length;
+            // Reload the iframe with the next route
+            loadRoute();
+        }
+    });
+
+    // Initial load
+    loadRoute();
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
