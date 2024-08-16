@@ -258,16 +258,16 @@ blockquote iframe {
   display: inline; /* Make sure the text and cursor are on the same line */
 }
 
-#cursor {
+/* #cursor {
   font-size: 1.5em;
   color: white;
-  display: inline; /* Make sure the cursor is on the same line as the text */
-  animation: blink 0.7s step-end infinite; /* flicker animation */
-}
+  display: inline; 
+  animation: blink 0.7s step-end infinite; 
+} */
 
-@keyframes blink {
+/* @keyframes blink {
   50% { opacity: 0; }
-}
+} */
 
 
 /* corner bar */
