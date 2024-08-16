@@ -175,7 +175,7 @@ document.querySelectorAll('.sidebar a').forEach(anchor => {
 document.addEventListener("DOMContentLoaded", function () {
     const text = "As an architect, every time I enter an architectural space or walk on the street, I usually wonder which elements cause us to feel different between the spaces.";
     const typingTextElement = document.getElementById("typing-text");
-    const cursor = document.getElementById("cursor");
+    // const cursor = document.getElementById("cursor");
     let index = 0;
   
     function typeWriter() {
